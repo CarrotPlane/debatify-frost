@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debating Timer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="selector">
+    <h0>Menu</h0>
+    <select id="modeSelector" onchange="switchMode()">
+    <option value="timer">Timer</option>
+    <option value="stopwatch">Stopwatch</option>
+    <option value="about">About</option>
+    </select>
+  </div>
+  
+
+  <div class="header">
+  <h1>Debatify</h1>
+  <h2>v0.0f (BETA)</h2>
+  </div>
+
+  <div id="timer">
+    <div class="main">
+      <select id="timerType">
+      <option value="30">30-second (Tennis Style)</option>
+      <option value="120">2-minute (Secret Topic)</option>
+      <option value="180">3-minute (Prepared Topic)</option>
+      <option value="240">4-minute (Long Speech)</option>
+      </select>
+      <div id="timerDisplay">00:00</div>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button> 
+    
+    </div>
+
+  </div>
+
+  <div id="stopwatch">
+    <h5>NOT FINISHED</h5>
+  </div>
+
+  <div id="about">
+    <h6>Debatify is an app to help you with your debating activities.</h6>
+    <p id="credit">Made by Lex - v0.0f (debatify-frost)</p>
+  </div>
+
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <script src="main.js"></script>
+  
+  <h3>Thank you for using Debatify!</h3>
+  <audio id="bell" src="assets/bell.wav" preload="auto"></audio>    
+</body>
+</html>

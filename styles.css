@@ -1,0 +1,210 @@
+.header {
+  padding: 30px; 
+  text-align: center; 
+  background: #f0f2f5; 
+  color: white; 
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.header h2 {
+  font-size: 1rem;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+h6 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+#credit {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 105px;
+  color: #222;
+}
+
+.selector h0 {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 1.5rem;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+#modeSelector {
+  position: fixed;
+  top: 60px;
+  left: 20px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+
+body {
+  font-family: 'Poppins', 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #eff1f3, #9bbfe8);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#timerType {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+}
+
+#timerDisplay {
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  margin: 10px auto;
+  display: block;
+}
+
+
+button:hover {
+  background-color: #064e82;
+}
+
+h3,
+h5 {
+  font-size: 1rem;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* unintentionally cooler in dark mode lol*/
+
+@keyframes flashRed {
+  0%   { color: red; }
+  50%  { color: #000000; }
+  100% { color: red; }
+}
+
+.flash-red {
+  animation: flashRed 0.5s infinite;
+}
+
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+/* dark mode styles */
+
+body.dark-mode .header {
+  padding: 30px; 
+  text-align: center; 
+  background: #292828; 
+  color: #f0f0f0; 
+  margin-bottom: 50px;
+}
+
+body.dark-mode {
+  background: linear-gradient(135deg, #565656, #2a2a2a);
+  color: #f0f0f0;
+}
+
+.dark-mode h0,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode h7 {
+  color: #f0f0f0;
+}
+
+
+
+body.dark-mode #timerDisplay {
+  color: #f0f0f0;
+}
+
+@keyframes flashReddark {
+  0%   { color: red; }
+  50%  { color: #ffffff; }
+  100% { color: red; }
+}
+
+.dark-mode .flash-red{
+  animation: flashReddark 0.5s infinite;
+}
+
+
+.dark-mode #credit {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 105px;
+  color: #f0f0f0;
+}
+
+body.dark-mode button {
+  background-color: #287492;
+  color: white;
+
+}
+
+body.dark-mode button:hover {
+  background-color: #40c3f6;
+}
+
+
+#darkModeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  display: inline-block;
+}
+
+
+
+#darkModeToggle:hover {
+  background-color: #064e82;
+}
