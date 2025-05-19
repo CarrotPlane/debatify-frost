@@ -75,7 +75,7 @@ button {
   border-radius: 6px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 button {
   margin: 10px auto;
@@ -98,10 +98,10 @@ h5 {
   100% { color: red; }
 }
 .flash-red {
-  animation: flashRed 0.5s infinite;
+  animation: flashRed 0.6s infinite;
 }
 body {
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.5s, color 0.5s;
 }
 /* dark mode styles */
 body.dark-mode .header {
@@ -135,7 +135,7 @@ body.dark-mode #timerDisplay {
   100% { color: red; }
 }
 .dark-mode .flash-red{
-  animation: flashReddark 0.5s infinite;
+  animation: flashReddark 0.6s infinite;
 }
 .dark-mode #credit {
   text-align: center;
